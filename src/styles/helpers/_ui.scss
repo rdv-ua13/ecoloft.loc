@@ -1,0 +1,93 @@
+.ui-section:not(:last-child) {
+	margin-bottom: 24px;
+}
+.ui-title:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.ui {
+	padding-top: 16px;
+	background: #fff5ee;
+
+	h1, h2, h3, h4, h5, h6 {
+		text-transform: uppercase;
+	}
+}
+.ui-flex {
+	display: flex;
+	gap: 20px;
+}
+.ui-row:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.ui-color {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+
+	&__item {
+		min-width: 134px;
+		width: 134px;
+		min-height: 54px;
+		height: 54px;
+		border-radius: 16px 2px;
+
+		&.light {
+			border: 1px solid #808185;
+		}
+	}
+}
+
+.ui-tooltip-set {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 32px;
+	padding: 16px;
+	border: 1px dashed #9747FF;
+	border-radius: 16px;
+}
+
+.container-ui {
+	display:flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+.col-ui {
+	flex: 1;
+	display:flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.row-ui {
+	display:flex;
+	align-items:center;
+	gap: 16px;
+}
+.text-center {
+	text-align: center;
+}
+
+.tooltip-ui-set {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px;
+	padding: 12px;
+}
+.tooltip-ui-iconset {
+	min-width: 375px;
+	border: 1px solid #808185;
+	border-radius: 8px;
+}
+.tooltip-ui-iconset .tooltip .icon {
+	min-width: 24px;
+	width: 24px;
+	min-height: 24px;
+	height: 24px;
+}
+.tooltip-ui-iconset .tooltip:hover .icon {
+	fill: #B22B29;
+	stroke: #B22B29;
+}

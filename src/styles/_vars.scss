@@ -1,0 +1,89 @@
+:root {
+	// base
+	--font-family-base: "Inter Tight", sans-serif;
+	--content-width: 1500px;
+	--container-offset: 12px;
+	--header-container-offset: 40px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+	--header-container-width: calc(var(--content-width) + (var(--header-container-offset) * 2));
+
+	// colors
+	--black-color: #000000;
+	--white-color: #FFFFFF;
+
+	--text-primary: rgba(20, 20, 20, 0.95);
+	--text-additional: rgba(20, 20, 20, 0.6);
+	--text-secondary: rgba(20, 20, 20, 0.7);
+	/*--text-caption: #B1B1B2;*/
+
+	//brown
+	--brown-50: #f5f5f4;
+	--brown-100: #e1dfdc;
+	--brown-200: #d3cfcb;
+	--brown-300: #bfb9b3;
+	--brown-400: #b2aca5;
+	--brown-500: #9f978e;
+	--brown-600: #918981;
+	--brown-700: #716b65;
+	--brown-800: #57534e;
+	--brown-900: #433f3c;
+
+	//yellow
+	--yellow-50: #f6f2ee;
+	--yellow-100: #e4d7c9;
+	--yellow-200: #d7c3af;
+	--yellow-300: #c4a88b;
+	--yellow-400: #b99775;
+	--yellow-500: #a77d52;
+	--yellow-600: #98724b;
+	--yellow-700: #77593a;
+	--yellow-800: #5c452d;
+	--yellow-900: #463522;
+
+	//green
+	--green-50: #f7f8f5;
+	--green-100: #e5eae0;
+	--green-200: #d8e0d1;
+	--green-300: #c7d1bb;
+	--green-400: #bcc9ae;
+	--green-500: #abbb9a;
+	--green-600: #9caa8c;
+	--green-700: #79856d;
+	--green-800: #5e6755;
+	--green-900: #484f41;
+	--green-1000: #243624;
+
+	//grey
+	--grey-50: #f1f1f1;
+	--grey-100: #d4d4d4;
+	--grey-200: #bfbfbf;
+	--grey-300: #a1a1a1;
+	--grey-400: #8f8f8f;
+	--grey-500: #737373;
+	--grey-600: #696969;
+	--grey-700: #525252;
+	--grey-800: #3f3f3f;
+	--grey-900: #303030;
+
+
+	--shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.04);
+	--shadow2: 0 12px 28px -16px rgba(247, 209, 57, 0.2);
+	--shadow3: 0 12px 28px -16px rgba(43, 45, 50, 0.2);
+	--shadow-float: 0 8px 20px -6px rgba(17, 17, 17, 0.12);
+	--shadow-float2: 0 8px 12px 0 rgba(128, 129, 133, 0.16);
+	--shadow-card: 0 20px 32px -8px rgba(17, 17, 17, 0.12);
+	--shadow-card2: 0 2px 16px 0 rgba(0, 0, 0, 0.04);
+
+
+	// fancybox
+	--fancybox-scrollbar-compensate: 17px;
+	--fancybox-bg: rgba(0, 0, 0, 0.7);
+
+	// transition
+	--transition: 0.2s ease-out;
+}
+@media (min-width: 1200px) {
+	:root {
+		--container-offset: 80px;
+	}
+}
