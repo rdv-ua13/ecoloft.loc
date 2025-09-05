@@ -43,6 +43,17 @@
                         </a>
                         <span class="header-contacts__tel-caption fz-caption-xs">Ежедневно с 9:00 до 20:00</span>
                     </div>
+                    <div class="header-contacts__btns">
+                        <button class="btn-reset btn header-contacts__btn header-contacts__call" type="button">
+                            <span class="text-content">Заказать звонок</span>
+                        </button>
+                        <a class="btn-reset btn header-contacts__btn" href="javascript:;">
+                            <svg class="icon icon-fill">
+                                <use href="img/sprite.svg#soc-tg"></use>
+                            </svg>
+                            <span class="text-content">Написать в Telegram</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

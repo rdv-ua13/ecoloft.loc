@@ -27,7 +27,7 @@
 	&-contacts {
 		display: flex;
 		align-items: center;
-		gap: 12px;
+		gap: 36px;
 		padding-top: 1px;
 
 		&__tel {
@@ -47,6 +47,22 @@
 			&-caption {
 				color: var(--text-additional);
 			}
+		}
+		&__btns {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		&__btn {
+			border: 1px solid var(--green-100);
+			background-color: var(--white-color);
+
+			&:hover {
+				background-color: var(--green-500);
+			}
+		}
+		&__call {
+			background-color: var(--green-100);
 		}
 	}
 
@@ -91,10 +107,6 @@
 			}
 		}
 	}
-}
-
-.plug-header {
-
 }
 
 .burger {
@@ -564,7 +576,10 @@
 }
 @media (min-width: 1200px) {
 	.header {
-		margin-bottom: -244px;
+		min-width: calc(100% - 80px);
+		width: calc(100% - 80px);
+		margin: 0 40px 56px;
+		border-radius: 12px;
 
 		.container {
 			max-width: var(--header-container-width);
@@ -579,6 +594,11 @@
 				min-height: 48px;
 				height: 48px;
 			}
+		}
+
+		&-contacts {
+			margin-left: auto;
+			padding-top: unset;
 		}
 
 
