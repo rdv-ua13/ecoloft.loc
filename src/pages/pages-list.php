@@ -69,7 +69,7 @@
     <div>
         <ul>
 			<li><a class="ready" href="plug.php" target="_blank">Заглушка</a></li>
-			<?/*<li><a class="ready" href="index.php" target="_blank">Главная</a></li>*/?>
+			<li><a class="ready" href="index.php" target="_blank">Главная</a></li>
 
             <br>
 			<?/*<li><a class="ready" href="catalog-category.php" target="_blank">Каталог - категория</a></li>*/?>

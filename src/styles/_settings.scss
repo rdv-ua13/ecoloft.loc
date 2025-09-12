@@ -10,7 +10,7 @@ html {
 html,
 body {
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.375;
 }
 body {
 	position: relative;
@@ -30,6 +30,7 @@ body {
 	html,
 	body {
 		font-size: 18px;
+		line-height: 1.5;
 	}
 	body {
 		padding-top: 12px;
@@ -213,6 +214,18 @@ a {
 	transition: var(--transition);
 }
 
+[alt] {
+	font-size: 12px;
+}
+picture {
+	display: flex;
+
+	&,
+	img {
+		min-width: 100%;
+		width: 100%;
+	}
+}
 img {
 	max-width: 100%;
 	object-fit: cover;
@@ -224,7 +237,7 @@ svg {
 	max-height: 100%;
 }
 .icon {
-	min-width: 16px;
+	/*min-width: 16px;
 	width: 16px;
 	min-height: 16px;
 	height: 16px;
@@ -232,9 +245,9 @@ svg {
 	transition: var(--transition);
 
 	fill: var(--black-color);
-	stroke: var(--black-color);
+	stroke: var(--black-color);*/
 
-	&-xs {
+	/*&-xs {
 		min-width: 12px!important;
 		width: 12px!important;
 		min-height: 12px!important;
@@ -263,7 +276,7 @@ svg {
 		width: 28px!important;
 		min-height: 28px!important;
 		height: 28px!important;
-	}
+	}*/
 
 	&-fill {
 		stroke: none!important;
@@ -273,7 +286,7 @@ svg {
 	}
 }
 
-p {
+/*p {
 	margin-top: 0;
 
 	&:last-child {
@@ -293,7 +306,7 @@ p {
 			margin-bottom: 16px;
 		}
 	}
-}
+}*/
 
 body:not(.is-using-mouse) {
 	.fancybox {
@@ -545,18 +558,20 @@ body:not(.is-using-mouse) {
 	justify-content: center;
 	align-items: center;
 	gap: 12px;
-	min-height: 48px;
-	height: 48px;
-	padding: 0 27px;
-	border: 0;
+	min-height: 44px;
+	height: 44px;
+	padding: 0 11px;
+	border: 1px solid var(--green-100);
 	border-radius: 12px;
-	background-color: var(--surface-brand);
-	color: var(--text-primary);
+	background-color: var(--green-100);
+	color: var(--green-1000);
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 24px;
 	cursor: pointer;
-	transition: var(--transition);
+	transition: border-color 0.2s ease-out,
+				background-color 0.2s ease-out,
+				color 0.2s ease-out;
 
 	.icon,
 	.text-content {
@@ -564,49 +579,56 @@ body:not(.is-using-mouse) {
 		user-select: none;
 	}
 	.icon {
-		min-width: 20px;
-		width: 20px;
-		min-height: 20px;
-		height: 20px;
+		min-width: 24px;
+		width: 24px;
+		min-height: 24px;
+		height: 24px;
 
-		fill: var(--text-primary);
-		stroke: var(--text-primary);
+		fill: var(--green-1000);
+		stroke: var(--green-1000);
 	}
 	.text-content {
 		white-space: nowrap;
 	}
 
-	&.disabled,
+	/*&.disabled,
 	&:disabled {
 		background-color: var(--surface-gray4) !important;
 		color: var(--text-secondary) !important;
 		cursor: not-allowed !important;
+	}*/
+
+	&:hover {
+		background-color: var(--green-500);
 	}
 
+
 	&-primary {
-		background-color: var(--surface-brand);
-		color: var(--text-primary);
+		border-color: var(--green-100);
+		background-color: var(--green-100);
+		color: var(--green-1000);
 
 		.icon {
-			fill: var(--text-primary);
-			stroke: var(--text-primary);
+			fill: var(--green-1000);
+			stroke: var(--green-1000);
 		}
 
 		&:hover,
 		&:active,
 		&.active {
-			box-shadow: var(--shadow2);
-			background-color: var(--surface-gray2);
-			color: var(--surface-brand);
+			border-color: var(--green-500);
+			background-color: var(--green-500);
+			color: var(--green-1000);
 
 			.icon {
-				fill: var(--surface-brand);
-				stroke: var(--surface-brand);
+				fill: var(--green-1000);
+				stroke: var(--green-1000);
 			}
 		}
 	}
 	&-secondary {
-		background-color: var(--surface-gray2);
+		border-color: var(--orange-600);
+		background-color: var(--orange-600);
 		color: var(--white-color);
 
 		.icon {
@@ -617,148 +639,40 @@ body:not(.is-using-mouse) {
 		&:hover,
 		&:active,
 		&.active {
-			box-shadow: var(--shadow3);
-			background-color: var(--surface-gray3);
+			border-color: var(--orange-400);
+			background-color: var(--orange-400);
+			color: var(--white-color);
+
+			.icon {
+				fill: var(--white-color);
+				stroke: var(--white-color);
+			}
 		}
 	}
 	&-extra {
-		background-color: var(--surface-gray5);
-		color: var(--text-primary);
+		border-color: var(--green-100);
+		background-color: transparent;
+		color: var(--green-1000);
 
 		.icon {
-			fill: var(--text-primary);
-			stroke: var(--text-primary);
+			fill: var(--green-1000);
+			stroke: var(--green-1000);
 		}
 
 		&:hover,
 		&:active,
 		&.active {
-			box-shadow: var(--shadow3);
-			background-color: var(--surface-gray3);
-			color: var(--white-color);
+			border-color: var(--green-500);
+			background-color: var(--green-500);
+			color: var(--green-1000);
 
 			.icon {
-				fill: var(--white-color);
-				stroke: var(--white-color);
+				fill: var(--green-1000);
+				stroke: var(--green-1000);
 			}
 		}
 	}
-	&-extra-2 {
-		background-color: var(--surface-gray6);
-		color: var(--text-secondary);
-
-		.icon {
-			fill: var(--text-secondary);
-			stroke: var(--text-secondary);
-		}
-
-		&:hover,
-		&:active,
-		&.active {
-			box-shadow: var(--shadow3);
-			background-color: var(--surface-gray5);
-			color: var(--text-primary);
-
-			.icon {
-				fill: var(--text-primary);
-				stroke: var(--text-primary);
-			}
-		}
-	}
-	&-transparent {
-		background-color: transparent;
-		color: var(--text-primary);
-
-		.icon {
-			fill: var(--text-primary);
-			stroke: var(--text-primary);
-		}
-
-		&:hover {
-			background-color: var(--surface-gray6);
-			color: var(--text-primary);
-
-			.icon {
-				fill: var(--text-primary);
-				stroke: var(--text-primary);
-			}
-		}
-		&:active,
-		&.active {
-			background-color: var(--surface-gray5);
-			color: var(--text-primary);
-
-			.icon {
-				fill: var(--text-primary);
-				stroke: var(--text-primary);
-			}
-		}
-	}
-	&-transparent-bordered {
-		border: 1px solid var(--text-primary);
-		background-color: transparent;
-		color: var(--text-primary);
-
-		.icon {
-			fill: var(--text-primary);
-			stroke: var(--text-primary);
-		}
-
-		&:hover {
-			border-color: var(--surface-gray3);
-			box-shadow: var(--shadow3);
-			background-color: var(--surface-gray3);
-			color: var(--white-color);
-
-			.icon {
-				fill: var(--white-color);
-				stroke: var(--white-color);
-			}
-		}
-		&:active,
-		&.active {
-			background-color: var(--surface-gray5);
-			color: var(--text-primary);
-
-			.icon {
-				fill: var(--text-primary);
-				stroke: var(--text-primary);
-			}
-		}
-	}
-	&-transparent-bordered-2 {
-		border: 1px solid var(--surface-gray4);
-		background-color: transparent;
-		color: var(--text-primary);
-
-		.icon {
-			fill: var(--text-primary);
-			stroke: var(--text-primary);
-		}
-
-		&:hover {
-			border-color: var(--surface-gray3);
-			box-shadow: var(--shadow3);
-			background-color: var(--surface-gray3);
-			color: var(--white-color);
-
-			.icon {
-				fill: var(--white-color);
-				stroke: var(--white-color);
-			}
-		}
-		&:active,
-		&.active {
-			background-color: var(--surface-gray5);
-			color: var(--text-primary);
-
-			.icon {
-				fill: var(--text-primary);
-				stroke: var(--text-primary);
-			}
-		}
-	}
-	&-shapeless {
+	/*&-shapeless {
 		min-height: unset;
 		height: auto;
 		padding: unset;
@@ -782,68 +696,21 @@ body:not(.is-using-mouse) {
 				stroke: var(--text-secondary);
 			}
 		}
-	}
+	}*/
 
-	&-header {
-		justify-content: center;
-		align-items: center;
-		gap: 4px;
-		min-height: 50px;
-		height: 50px;
-		min-width: 50px;
-		width: 50px;
-		padding: 0;
-		background-color: transparent;
-		line-height: 1;
-
-		.icon {
-			min-width: 24px;
-			width: 24px;
-			min-height: 24px;
-			height: 24px;
-		}
-		&__count {
-			position: absolute;
-			top: 10px;
-			right: 6px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			min-width: 14px;
-			width: 14px;
-			min-height: 14px;
-			height: 14px;
-			overflow: hidden;
-			padding: 2px;
-			border-radius: 50%;
-			background-color: var(--surface-red);
-			color: var(--white-color);
-			font-weight: 700;
-			font-size: 8px;
-			line-height: 1;
-			letter-spacing: calc(13px * 0.07);
-		}
-	}
 	&-square {
 		gap: unset;
-		min-width: 36px;
-		width: 36px;
-		min-height: 36px;
-		height: 36px;
-		padding: 0;
-		box-shadow: var(--shadow-float);
-		background-color: var(--surface-gray2);
+		min-width: 48px;
+		width: 48px;
+		min-height: 48px;
+		height: 48px;
+		padding: unset;
+		border: 1px solid var(--green-100);
+		border-radius: 12px;
+		background-color: transparent;
 		color: transparent;
 
 		.icon {
-			min-width: 20px;
-			width: 20px;
-			min-height: 20px;
-			height: 20px;
-
-			fill: var(--surface-gray4);
-			stroke: var(--surface-gray4);
-
 			&:not(:first-child) {
 				display: none;
 			}
@@ -852,32 +719,54 @@ body:not(.is-using-mouse) {
 			display: none;
 		}
 
-		&-light {
-			border-color: var(--surface-gray5);
-			background-color: var(--white-color);
-
-			.icon {
-				fill: #7B7B7B;
-				stroke: #7B7B7B;
-			}
+		&--sm {
+			min-width: 44px;
+			width: 44px;
+			min-height: 44px;
+			height: 44px;
 		}
-	}
 
-	&-lg {
-		min-height: 52px;
-		height: 52px;
-		border-radius: 8px;
-	}
-	&-sm {
-		min-height: 32px;
-		height: 32px;
-		padding: 0 12px;
-		font-size: 10px;
+		&:hover {
+			border-color: var(--green-500);
+		}
 	}
 }
 @media (min-width: 992px) {
 	.btn {
 		font-size: 16px;
+	}
+}
+@media (min-width: 1200px) {
+	.btn {
+		min-height: 48px;
+		height: 48px;
+		padding: 0 27px;
+
+		&-square {
+			min-width: 48px;
+			width: 48px;
+			min-height: 48px;
+			height: 48px;
+			padding: unset;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.btn-g {
+		.btn {
+			&-w50,
+			&-w50--mobile {
+				max-width: calc((100% - 12px) / 2);
+				width: calc((100% - 12px) / 2);
+			}
+		}
+	}
+	.btn {
+		&-w50,
+		&-w50--mobile {
+			max-width: 50%;
+			width: 50%;
+		}
 	}
 }
 
@@ -964,11 +853,14 @@ input.disabled {
 		&-sm {
 			margin-bottom: 24px !important;
 		}
-		&-md {
+		&-sm-plus {
 			margin-bottom: 32px !important;
 		}
-		&-md-plus {
+		&-md {
 			margin-bottom: 40px !important;
+		}
+		&-md-plus {
+			margin-bottom: 48px !important;
 		}
 		&-lg {
 			margin-bottom: 60px !important;
@@ -992,22 +884,24 @@ input.disabled {
 @media (max-width: 991px) {
 	.gap {
 		&-xs {
-			margin-bottom: 16px !important;
+			margin-bottom: 12px !important;
 		}
-		&-sm {
-			margin-bottom: 20px !important;
+		&-sm,
+		&-sm-plus {
+			margin-bottom: 12px !important;
 		}
-		&-md {
+		&-md,
+		&-md-plus {
 			margin-bottom: 24px !important;
 		}
 		&-lg {
 			margin-bottom: 32px !important;
 		}
 		&-lg-plus {
-			margin-bottom: 24px !important;
+			margin-bottom: 40px !important;
 		}
 		&-xl {
-			margin-bottom: 40px !important;
+			margin-bottom: 48px !important;
 		}
 
 		&--desktop-only {

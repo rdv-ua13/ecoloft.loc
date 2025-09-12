@@ -44,10 +44,10 @@
                         <span class="header-contacts__tel-caption fz-caption-xs">Ежедневно с 9:00 до 20:00</span>
                     </div>
                     <div class="header-contacts__btns">
-                        <button class="btn-reset btn header-contacts__btn header-contacts__call" type="button">
+                        <button class="btn-reset btn" type="button">
                             <span class="text-content">Заказать звонок</span>
                         </button>
-                        <a class="btn-reset btn header-contacts__btn" href="javascript:;">
+                        <a class="btn-reset btn btn-extra" href="javascript:;">
                             <svg class="icon icon-fill">
                                 <use href="img/sprite.svg#soc-tg"></use>
                             </svg>
@@ -62,7 +62,7 @@
     <main class="main plug-main">
         <div class="gap-lg-plus">
             <div class="container">
-                <h1>
+                <h1 class="index-heading">
                     <span>Готовые модульные бани, глемпинги и гостевые домики </span>
                     <span class="color-green-700">в Москве и Московской области</span>
                 </h1>
@@ -108,7 +108,7 @@
                 <img
                     loading="lazy"
                     class="image plug-image desktop-only"
-                    src="img/plug-img.png"
+                    src="img/plug-img-tiny.png"
                     width="1340"
                     height="520"
                     alt="Изображение блока"
@@ -116,7 +116,7 @@
                 <img
                     loading="lazy"
                     class="image plug-image mobile-only"
-                    src="img/plug-img-mobile.png"
+                    src="img/plug-img-mobile-tiny.png"
                     width="375"
                     height="549"
                     alt="Изображение блока"
@@ -125,26 +125,26 @@
         </div>
     </main>
 
-    <footer class="footer plug-footer">
+    <footer class="footer">
         <div class="container">
-            <div class="plug-footer__content">
-                <div class="plug-footer__row">
-                    <div class="plug-footer__item">
-                        <div class="plug-footer__title">Звоните, пишите</div>
-                        <div class="plug-footer__main">
+            <div class="footer__content">
+                <div class="footer__row">
+                    <div class="footer__item">
+                        <div class="footer__title">Звоните, пишите</div>
+                        <div class="footer__main">
                             <a href="tel:+71234567890" class="fz-subtitle-2">+7 (123) 456-78-90</a>
                         </div>
-                        <div class="plug-footer__caption">
+                        <div class="footer__caption">
                             <a href="mailto:info@ecloft.ru">info@ecloft.ru</a>
                         </div>
                     </div>
-                    <div class="plug-footer__item">
-                        <div class="plug-footer__title">Или приходите в наш офис</div>
-                        <div class="plug-footer__main">
+                    <div class="footer__item">
+                        <div class="footer__title">Или приходите в наш офис</div>
+                        <div class="footer__main">
                             <span class="fz-subtitle-2">3-я ул. Строителей, дом&nbsp;25,&nbsp;офис&nbsp;12</span>
                         </div>
-                        <div class="plug-footer__caption">
-                            <div class="plug-footer__pin">
+                        <div class="footer__caption">
+                            <div class="footer__pin">
                                 <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#pin"></use>
                                 </svg>
@@ -152,22 +152,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="plug-footer__item">
-                        <div class="plug-footer__main">
-                            <div class="plug-footer__soc">
-                                <div class="plug-footer__soc-title">Свяжитесь в социальных сетях</div>
-                                <div class="plug-footer__soc-links">
-                                    <a href="javascript:;" class="plug-footer__soc-link">
+                    <div class="footer__item">
+                        <div class="footer__main">
+                            <div class="footer__soc">
+                                <div class="footer__title footer__soc-title">Свяжитесь в социальных сетях</div>
+                                <div class="footer__soc-links">
+                                    <a href="javascript:;" class="btn-reset btn btn-square">
                                         <svg class="icon icon-fill">
                                             <use href="img/sprite.svg#soc-tg"></use>
                                         </svg>
                                     </a>
-                                    <a href="javascript:;" class="plug-footer__soc-link">
+                                    <a href="javascript:;" class="btn-reset btn btn-square">
                                         <svg class="icon icon-fill">
                                             <use href="img/sprite.svg#soc-vk"></use>
                                         </svg>
                                     </a>
-                                    <a href="javascript:;" class="plug-footer__soc-link">
+                                    <a href="javascript:;" class="btn-reset btn btn-square">
                                         <svg class="icon icon-fill">
                                             <use href="img/sprite.svg#soc-wa"></use>
                                         </svg>
@@ -177,14 +177,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="plug-footer__row plug-footer__rights">
-                    <div class="plug-footer__item">
+                <div class="footer__row footer__rights">
+                    <div class="footer__item">
                         <span class="fz-sm">&#169; ECOLOFT, <?=date('Y');?></span>
                     </div>
-                    <div class="plug-footer__item mobile-only">
+                    <div class="footer__item mobile-only">
                         <a href="javascript:;" class="fz-sm">Политика конфиденциальности</a>
                     </div>
-                    <div class="plug-footer__item mobile-only">
+                    <div class="footer__item mobile-only">
                         <a href="javascript:;" class="fz-sm">Пользовательское соглашение</a>
                     </div>
                 </div>
