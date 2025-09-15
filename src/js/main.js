@@ -280,6 +280,9 @@ application.prototype.initBasicSlider = function () {
                 if(slider.eq(i).is('[data-basic-slider-tabs]')) {
                     spaceBetween = 48;
                 }
+                else if(slider.eq(i).is('[data-page-pagination]')) {
+                    spaceBetween = 12;
+                }
                 else {
                     spaceBetween = 12;
                 }
@@ -287,6 +290,9 @@ application.prototype.initBasicSlider = function () {
             else if (window.matchMedia('(max-width: 991px)').matches) {
                 if(slider.eq(i).is('[data-basic-slider-tabs]')) {
                     spaceBetween = 20;
+                }
+                else if(slider.eq(i).is('[data-page-pagination]')) {
+                    spaceBetween = 8;
                 }
                 else {
                     spaceBetween = 12;

@@ -725,11 +725,6 @@
                         </div>*/?>
                 </div>
             </div>
-            <div class="basic-hca__action">
-                <a class="btn-reset btn btn-primary basic-hca__action-more" href="javascript:;">
-                    <span class="text-content">Все статьи</span>
-                </a>
-            </div>
         </div>
     </div>
 </div>
@@ -758,7 +753,7 @@
                                                 class="image"
                                                 src="img/ecoloft_project_1.png"
                                                 width="299"
-                                                height="170"
+                                                height="180"
                                                 alt="Изображение блока"
                                         >
                                     </a>
@@ -787,7 +782,7 @@
                                                 class="image"
                                                 src="img/ecoloft_project_2.png"
                                                 width="299"
-                                                height="170"
+                                                height="180"
                                                 alt="Изображение блока"
                                         >
                                     </a>
@@ -816,7 +811,7 @@
                                                 class="image"
                                                 src="img/ecoloft_project_3.png"
                                                 width="299"
-                                                height="170"
+                                                height="180"
                                                 alt="Изображение блока"
                                         >
                                     </a>
@@ -845,7 +840,7 @@
                                                 class="image"
                                                 src="img/ecoloft_project_1.png"
                                                 width="299"
-                                                height="170"
+                                                height="180"
                                                 alt="Изображение блока"
                                         >
                                     </a>

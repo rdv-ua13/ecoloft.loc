@@ -1,37 +1,30 @@
-<ul class="list-reset pagination" aria-label="page-navigation">
-    <li class="pagination__item">
-        <a class="pagination__link pagination__link-control" href="javascript:;" aria-label="Previous">
-            <svg class="icon icon-fill">
-                <use href="img/sprite.svg#chevron-left"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="pagination__item">
-        <a class="pagination__link" href="javascript:;"><span>1</span></a>
-    </li>
-    <li class="pagination__item">
-        <a class="pagination__link" href="javascript:;"><span>2</span></a>
-    </li>
-    <li class="pagination__item">
-        <a class="pagination__link active" href="javascript:;"><span>3</span></a>
-    </li>
-    <li class="pagination__item">
-        <a class="pagination__link" href="javascript:;"><span>...</span></a>
-    </li>
-    <li class="pagination__item">
-        <a class="pagination__link" href="javascript:;"><span>15</span></a>
-    </li>
-    <li class="pagination__item">
-        <a class="pagination__link" href="javascript:;"><span>16</span></a>
-    </li>
-    <li class="pagination__item">
-        <a class="pagination__link" href="javascript:;"><span>17</span></a>
-    </li>
-    <li class="pagination__item">
-        <a class="pagination__link pagination__link-control" href="javascript:;" aria-label="Next">
-            <svg class="icon icon-fill">
-                <use href="img/sprite.svg#chevron-right"></use>
-            </svg>
-        </a>
-    </li>
-</ul>
+<div class="slider-out basic-slider-wrap">
+    <div class="basic-slider swiper pagination" aria-label="page-navigation" data-basic-slider data-page-pagination>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a class="pagination__link active" href="javascript:;"><span>1</span></a>
+            </div>
+            <div class="swiper-slide">
+                <a class="pagination__link" href="javascript:;"><span>2</span></a>
+            </div>
+            <div class="swiper-slide">
+                <a class="pagination__link" href="javascript:;"><span>3</span></a>
+            </div>
+            <div class="swiper-slide">
+                <a class="pagination__link" href="javascript:;"><span>4</span></a>
+            </div>
+            <div class="swiper-slide">
+                <a class="pagination__link" href="javascript:;"><span>5</span></a>
+            </div>
+            <div class="swiper-slide">
+                <a class="pagination__link" href="javascript:;"><span>6</span></a>
+            </div>
+            <div class="swiper-slide">
+                <a class="pagination__link" href="javascript:;"><span>7</span></a>
+            </div>
+            <div class="swiper-slide">
+                <a class="pagination__link" href="javascript:;"><span>8</span></a>
+            </div>
+        </div>
+    </div>
+</div>

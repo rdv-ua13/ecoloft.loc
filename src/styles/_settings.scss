@@ -1102,22 +1102,21 @@ input.disabled {
 
 		&:not(:last-child) {
 			.nav-breadcrumbs__item {
-				margin-right: 19px;
-				color: var(--text-secondary);
+				padding-right: 28px;
 				text-decoration: none;
 
 				&::before {
 					content: "";
 					position: absolute;
-					top: calc(50% + 1px);
-					right: -11px;
+					top: 50%;
+					right: 4px;
 					transform: translateY(-50%);
-					min-width: 3px;
-					width: 3px;
-					min-height: 3px;
-					height: 3px;
+					min-width: 20px;
+					width: 20px;
+					min-height: 20px;
+					height: 20px;
 					border-radius: 50%;
-					background-color: var(--surface-gray4);
+					background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgb3BhY2l0eT0iMC41Ij4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03Ljg5MTA3IDEzLjc3NTNDNy42NDY5OSAxMy41MzEyIDcuNjQ2OTkgMTMuMTM1NSA3Ljg5MTA3IDEyLjg5MTRMMTAuNzgyNSAxMEw3Ljg5MTA3IDcuMTA4NjVDNy42NDY5OSA2Ljg2NDU3IDcuNjQ2OTkgNi40Njg4NCA3Ljg5MTA3IDYuMjI0NzdDOC4xMzUxNCA1Ljk4MDY5IDguNTMwODcgNS45ODA2OSA4Ljc3NDk1IDYuMjI0NzdMMTIuMTA4MyA5LjU1ODFDMTIuMzUyNCA5LjgwMjE4IDEyLjM1MjQgMTAuMTk3OSAxMi4xMDgzIDEwLjQ0Mkw4Ljc3NDk1IDEzLjc3NTNDOC41MzA4NyAxNC4wMTk0IDguMTM1MTQgMTQuMDE5NCA3Ljg5MTA3IDEzLjc3NTNaIiBmaWxsPSIjMTQxNDE0IiBmaWxsLW9wYWNpdHk9IjAuOTUiLz4KPC9nPgo8L3N2Zz4K');
 					line-height: 1;
 					pointer-events: none;
 					user-select: none;
@@ -1126,7 +1125,6 @@ input.disabled {
 		}
 		&:last-child {
 			.nav-breadcrumbs__item {
-				color: var(--text-primary);
 				cursor: default;
 			}
 		}
@@ -1134,6 +1132,7 @@ input.disabled {
 	&__item {
 		position: relative;
 		display: inline-flex;
+		color: var(--text-additional);
 		font-weight: 500;
 		font-size: 12px;
 		line-height: 1.4;
@@ -1675,13 +1674,7 @@ input.disabled {
 
 	&-wrapper {
 		display: flex;
-		justify-content: center;
 		align-items: center;
-	}
-	&__item {
-		&:nth-child(n+9):not(:last-child) {
-			display: none;
-		}
 	}
 	&__link {
 		display: flex;
@@ -1691,36 +1684,48 @@ input.disabled {
 		width: 40px;
 		min-height: 40px;
 		height: 40px;
-		border-radius: 4px;
-		background-color: var(--surface-gray5);
-		color: var(--text-primary);
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 24px;
+		border: 1px solid var(--green-100);
+		border-radius: 12px;
+		background-color: var(--white-color);
+		color: var(--green-1000);
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
 		cursor: pointer;
 		transition: var(--transition);
 
 		.icon {
-			min-width: 24px;
-			width: 24px;
-			min-height: 24px;
-			height: 24px;
-			fill: var(--text-primary);
-			stroke: var(--text-primary);
+			fill: var(--green-1000);
+			stroke: var(--green-1000);
 		}
 
-		&-control {
-			&[aria-label="Previous"] {
-				margin-right: 8px;
-			}
-			&[aria-label="Next"] {
-				margin-left: 8px;
-			}
-		}
-
-		&:hover,
 		&.active {
-			background-color: var(--surface-brand);
+			border-color: var(--orange-600);
+			background-color: var(--orange-600);
+			color: var(--white-color);
+		}
+	}
+}
+@media (min-width: 992px) {
+	.pagination {
+		&__link {
+			min-width: 48px;
+			width: 48px;
+			min-height: 48px;
+			height: 48px;
+			font-size: 16px;
+			line-height: 26px;
+
+			.icon {
+				fill: var(--green-1000);
+				stroke: var(--green-1000);
+			}
+
+			&:hover {
+				border-color: var(--orange-600);
+				background-color: var(--orange-600);
+				color: var(--white-color);
+			}
 		}
 	}
 }
@@ -2343,7 +2348,7 @@ input.disabled {
 	&-project {
 		gap: 12px;
 		padding: 7px;
-		border: unset;
+		border-color: var(--green-100);
 
 		.card__view {
 			overflow: hidden;
@@ -2421,19 +2426,19 @@ input.disabled {
 	&-event {
 		gap: 16px;
 		padding: 7px;
-		border: unset;
+		border-color: var(--green-100);
 
 		.card__view {
 			overflow: hidden;
-			min-height: 170px;
-			height: 170px;
+			min-height: 180px;
+			height: 180px;
 			border-radius: 16px;
 
 			.image {
 				min-width: 100%;
 				width: 100%;
-				min-height: 170px;
-				height: 170px;
+				min-height: 180px;
+				height: 180px;
 				border-radius: 16px;
 				object-fit: cover;
 			}
