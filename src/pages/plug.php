@@ -108,7 +108,7 @@
                 <img
                     loading="lazy"
                     class="image plug-image desktop-only"
-                    src="img/plug-img-tiny.png"
+                    src="img/plug-img.png"
                     width="1340"
                     height="520"
                     alt="Изображение блока"
@@ -116,7 +116,7 @@
                 <img
                     loading="lazy"
                     class="image plug-image mobile-only"
-                    src="img/plug-img-mobile-tiny.png"
+                    src="img/plug-img-mobile.png"
                     width="375"
                     height="549"
                     alt="Изображение блока"

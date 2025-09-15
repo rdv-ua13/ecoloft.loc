@@ -21,12 +21,6 @@
 	flex: 1;
 	min-width: 375px;
 	overflow: hidden;
-
-	.block {
-		&:last-child {
-			padding-bottom: unset;
-		}
-	}
 }
 @media (min-width: 1200px) {
 	.main {

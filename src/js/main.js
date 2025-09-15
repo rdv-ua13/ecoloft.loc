@@ -13,10 +13,11 @@ application.prototype.init = function () {
     this.initBurger();
     this.initCatalogMenu();
     this.initOverlay();
-    /*this.initDropdownMenu();*/
     this.initBasicSlider();
-    /*this.initBasicTabSlider();*/
     this.initSliders();
+    this.initBasicTabs();
+    /*this.initDropdownMenu();*/
+    /*this.initBasicTabSlider();*/
     /*this.initSticky()*/;
     /*this.initMiniSlider();*/
     /*this.initSelect2();*/
@@ -34,7 +35,7 @@ application.prototype.init = function () {
     /*this.initCatalogSidebarApplyFilter();*/
     /*this.initCatalogContentSort();*/
     /*this.initContactsMap();*/
-    /*this.initBasicTabs();*/
+
     this.initContactsAccordion();
     this.initFancyboxBehavior();
     /*this.initPasswordSwitcher();*/
@@ -269,14 +270,29 @@ application.prototype.initBasicSlider = function () {
     if ($('.basic-slider-wrap').length) {
         const slider = $('[data-basic-slider]');
         let basicSlider = null;
-        let spaceBetween = 8;
-
-        if(window.matchMedia('(min-width: 992px)').matches) {
-            spaceBetween = 16;
-        }
+        let spaceBetween = 12;
 
         slider.each(function (i) {
             slider.eq(i).closest('.basic-slider-wrap').addClass('basic-slider-wrap-' + i);
+
+            // spaceBetween
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                if(slider.eq(i).is('[data-basic-slider-tabs]')) {
+                    spaceBetween = 48;
+                }
+                else {
+                    spaceBetween = 12;
+                }
+            }
+            else if (window.matchMedia('(max-width: 991px)').matches) {
+                if(slider.eq(i).is('[data-basic-slider-tabs]')) {
+                    spaceBetween = 20;
+                }
+                else {
+                    spaceBetween = 12;
+                }
+            }
+
             const basicSliderSetting = {
                 slidesPerView: 'auto',
                 slidesPerGroup: 1,
