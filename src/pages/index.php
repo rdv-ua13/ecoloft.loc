@@ -591,30 +591,51 @@
                     <div class="basic-slider swiper" data-basic-slider>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="card card-event">
-                                    <a class="card__view" href="javascript:;">
-                                        <img
-                                                loading="lazy"
-                                                class="image"
-                                                src="img/ecoloft_project_1.png"
-                                                width="299"
-                                                height="170"
-                                                alt="Изображение блока"
-                                        >
-                                    </a>
+                                <div class="card card-review">
+                                    <div class="card__header">
+                                        <a class="card__view" href="javascript:;">
+                                            <img
+                                                    loading="lazy"
+                                                    class="image"
+                                                    src="img/ecoloft_user_1.png"
+                                                    width="60"
+                                                    height="60"
+                                                    alt="Изображение блока"
+                                            >
+                                        </a>
+                                        <div class="card__header-descr">
+                                            <a class="card__title fz-subtitle-4 fw-semibold" href="javascript:;">Вася и Катя</a>
+                                            <div class="card__subtitle fz-sm">Баня на дачу</div>
+                                        </div>
+                                    </div>
                                     <div class="card__info">
-                                        <a class="card__title fz-subtitle-4 fw-semibold" href="javascript:;">Преимущества модульной бани перед капитальной постройкой</a>
-                                        <div class="card__descr fz-sm">Модульные бани устанавливаются за один день, не требуют длительного строительства и позволяют экономить бюджет. Узнайте, почему всё больше владельцев загородных участков выбирают именно этот формат.</div>
+                                        <div class="card__descr fz-sm">Долго выбирали, как сделать баню на участке, чтобы не возиться со стройкой. С ECOLOFT всё оказалось просто: заказали парную и душевую, и уже через месяц отдыхали с друзьями. Очень довольны качеством!</div>
                                         <div class="card__act">
+                                            <div class="card__attached">
+                                                <div class="card__attached-item">
+                                                    <img
+                                                        loading="lazy"
+                                                        class="image"
+                                                        src="img/ecoloft_project_1.png"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                    >
+                                                </div>
+                                                <div class="card__attached-item">
+                                                    <img
+                                                        loading="lazy"
+                                                        class="image"
+                                                        src="img/ecoloft_project_2.png"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                    >
+                                                </div>
+                                            </div>
                                             <a class="btn-reset btn btn-shapless btn-shapless--orange card__more" href="javascript:;">
                                                 <span class="text-content">Читать полностью</span>
                                             </a>
-                                            <div class="card__date fz-sm">
-                                                <svg class="icon icon-fill">
-                                                    <use href="img/sprite.svg#calendar"></use>
-                                                </svg>
-                                                <span class="text-content">04.07.2025</span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

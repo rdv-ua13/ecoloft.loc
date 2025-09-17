@@ -2482,6 +2482,78 @@ input.disabled {
 		}
 	}
 
+	&-review {
+		gap: 24px;
+		padding: 19px;
+		border-color: var(--green-100);
+
+		.card__header {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+
+			&-descr {
+				display: flex;
+				flex-direction: column;
+				gap: 2px;
+			}
+			.card__subtitle {
+				color: var(--text-disabled);
+			}
+		}
+		.card__view {
+			min-width: 60px;
+			width: 60px;
+			min-height: 60px;
+			height: 60px;
+			overflow: hidden;
+			border-radius: 16px;
+
+			.image {
+				min-width: 100%;
+				width: 100%;
+				min-height: 100%;
+				height: 100%;
+			}
+		}
+		.card__info {
+			flex: 1;
+			gap: 24px;
+			padding: unset;
+		}
+		.card__descr {
+			flex: 1;
+		}
+		.card__act {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+		}
+		.card__attached {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+
+			&-item {
+				display: flex;
+				min-width: 80px;
+				width: 80px;
+				min-height: 80px;
+				height: 80px;
+				overflow: hidden;
+				border: 1px solid var(--green-100);
+				border-radius: 12px;
+
+				.image {
+					min-width: 100%;
+					width: 100%;
+					min-height: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+
 
 	&-list {
 		display: flex;
@@ -2597,6 +2669,20 @@ input.disabled {
 			}
 		}
 
+		&-review {
+			max-width: 438px;
+			padding: 19px 23px;
+
+			.card__view {
+				border-radius: 20px;
+			}
+			.card__attached {
+				&-item {
+					border-radius: 20px;
+				}
+			}
+		}
+
 
 		&-list {
 			.card-product {
@@ -2619,9 +2705,10 @@ input.disabled {
 
 	.basic-slider {
 		.card-project,
-		.card-event {
-			min-width: 439px;
-			width: 439px;
+		.card-event,
+		.card-review {
+			min-width: 438px;
+			width: 438px;
 		}
 	}
 }
@@ -2631,7 +2718,8 @@ input.disabled {
 		&-banner,
 		&-step,
 		&-project,
-		&-event {
+		&-event,
+		&-review {
 			min-width: 351px;
 			width: 351px;
 		}
@@ -2674,7 +2762,8 @@ input.disabled {
 
 	.basic-slider {
 		.card-project,
-		.card-event {
+		.card-event,
+		.card-review {
 			min-width: 315px;
 			width: 315px;
 		}
