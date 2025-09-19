@@ -17,20 +17,20 @@
     <link rel="stylesheet" href="css/main.css?v=<?=time();?>" type="text/css">
 
     <?/* Подключение библиотек (отдельно)*/?>
-    <script defer src="js/jquery.js"></script>                  <!-- jquery -->
+    <script defer src="js/jquery.js"></script>                      <!-- jquery -->
 	<?/*<script defer src="js/jquery.maskedinput.js"></script>      <!-- maskedinput -->*/?>
     <?/*<script defer src="js/jquery.validate.js"></script>         <!-- validate -->*/?>
     <?/*<script defer src="js/messages_ru.js"></script>             <!-- validate -->*/?>
-    <script defer src="js/popper.js"></script>                  <!-- popper -->
-    <script defer src="js/swiper-bundle.js"></script>           <!-- swiper -->
-    <script defer src="js/tippy-bundle.umd.js"></script>        <!-- tippy -->
-    <script defer src="js/fancybox.umd.js"></script>            <!-- fancybox -->
+    <script defer src="js/popper.js"></script>                      <!-- popper -->
+    <script defer src="js/swiper-bundle.js"></script>               <!-- swiper -->
+    <script defer src="js/tippy-bundle.umd.js"></script>            <!-- tippy -->
+    <script defer src="js/fancybox.umd.js"></script>                <!-- fancybox -->
 	<?/*<script defer src="js/select2.js"></script>                 <!-- select2 -->*/?>
 	<?/*<script defer src="js/readmore.js"></script>                <!-- readmore -->*/?>
     <?/*<script defer src="js/flatpickr.min.js"></script>           <!-- flatpickr -->*/?>
     <?/*<script defer src="js/ru.js"></script>                      <!-- flatpickr -->*/?>
     <?/*<script defer src="js/nouislider.js"></script>              <!-- nouislider -->*/?>
-	<?/*<script defer src="js/accordion.min.js"></script>               <!-- accordion -->*/?>
+	<script defer src="js/accordion.min.js"></script>               <!-- accordion -->
     <?/*<script defer src="js/sticky.min.js"></script>              <!-- sticky -->*/?>
 
     <script defer src="js/main.js?v=<?=time();?>"></script>

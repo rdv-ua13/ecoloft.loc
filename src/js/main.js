@@ -36,8 +36,10 @@ application.prototype.init = function () {
     /*this.initCatalogContentSort();*/
     /*this.initContactsMap();*/
 
-    this.initContactsAccordion();
-    this.initFancyboxBehavior();
+    /*this.initAccordion();*/
+    this.initModuleDescrAccordion();
+    this.initFancyboxModal();
+    /*this.initFancyboxDesign();*/
     /*this.initPasswordSwitcher();*/
     /*this.initDatepicker();*/
     /*this.setCardProductMore();*/
@@ -45,6 +47,7 @@ application.prototype.init = function () {
     this.initCartQuantity();
     this.initCheckall();
     this.initCountdown();
+    this.initModuleDescr();
 };
 
 // Initialization device check
@@ -1139,9 +1142,9 @@ application.prototype.initBasicTabs = function () {
     }
 };
 
-// Initialization contacts accordion
-application.prototype.initContactsAccordion = function () {
-    if ($(".index-contacts").length) {
+// Initialization accordion
+application.prototype.initAccordion = function () {
+    if ($(".accordion-container").length) {
         let accordion = null;
 
         if (window.matchMedia('(max-width: 991px)').matches) {
@@ -1158,17 +1161,45 @@ application.prototype.initContactsAccordion = function () {
                 return;
             }
             else if (window.matchMedia('(max-width: 991px)').matches) {
-                accordion = new Accordion([".index-contacts"],{
-                    openOnInit: [0],
+                accordion = new Accordion([".accordion-container"],{
                     duration: 200,
+                    showMultiple: true,
                 });
             }
         }
     }
 };
 
-// Initialize custom fancybox behavior
-application.prototype.initFancyboxBehavior = function () {
+// Initialization accordion
+application.prototype.initModuleDescrAccordion = function () {
+    if ($(".index-module-descr__info").length) {
+        let accordion = null;
+
+        if (window.matchMedia('(max-width: 991px)').matches) {
+            initAccordionResponsive();
+        }
+        $(window).on("resize", initAccordionResponsive);
+
+        function initAccordionResponsive() {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                if(accordion != null) {
+                    accordion.destroy();
+                    accordion = null;
+                }
+                return;
+            }
+            else if (window.matchMedia('(max-width: 991px)').matches) {
+                accordion = new Accordion([".index-module-descr__info"],{
+                    duration: 200,
+                    showMultiple: true,
+                });
+            }
+        }
+    }
+};
+
+// Initialize custom fancybox for modal
+application.prototype.initFancyboxModal = function () {
     const fancybox = $('[data-fancybox]');
     const burger = $('[data-menu-spoiler]');
     const menu = $('[data-menu]');
@@ -1193,10 +1224,40 @@ application.prototype.initFancyboxBehavior = function () {
     $(document).on('click', function (e) {
         if ($('.fancybox__slide.is-selected.has-inline').is(e.target) || $('.fancybox__slide .carousel__button.is-close').is(e.target)) {
             $('body').removeClass('overflow-hidden');
-            $('[data-open-promocode]').removeClass('selected');
-            $('[data-open-promocode]').closest('.modal-order-promocode__list').removeClass('has-active');
-            $('[data-open-promocode]').closest('.modal-order-promocode__item').removeClass('active');
         }
+    });
+};
+
+// Initialize custom fancybox from design
+application.prototype.initFancyboxDesign = function () {
+    Fancybox.bind("[data-fancybox-ecoloft]", {
+        theme: "dark",
+        mainStyle: {
+            "--f-toolbar-padding": "0",
+            "--f-button-svg-stroke-width": "1.5",
+            "--f-arrow-svg-stroke-width": "1.75",
+            "--f-thumb-width": "82px",
+            "--f-thumb-height": "82px",
+            "--f-thumb-border-radius": "8px",
+            "--f-thumb-selected-shadow": "inset 0 0 0 2px #fff, 0 0 0 1.5px #ff2e00",
+        },
+        zoomEffect: false,
+        fadeEffect: false,
+        showClass: "f-fadeIn",
+        hideClass: false,
+        dragToClose: false,
+        Carousel: {
+            Toolbar: {
+                absolute: false,
+                display: {
+                    middle: ["counter"],
+                    right: ["toggleFull", "close"],
+                },
+            },
+            Thumbs: {
+                type: "classic",
+            },
+        },
     });
 };
 
@@ -1552,5 +1613,22 @@ application.prototype.initCountdown = function () {
         function addLeadingZeros(time) {
             return ('0' + time).slice(-2);
         }
+    }
+};
+
+// Initialization index module descr
+application.prototype.initModuleDescr = function () {
+    if ($('.index-module-descr').length) {
+        let pointer = $('.index-module-descr__pointer');
+        let trigger = $('.index-module-descr__item');
+
+        pointer.on('mouseenter', function () {
+            let data = $(this).data('module-item');
+
+            $('[data-module-target="' + data + '"]').addClass('active')
+        });
+        pointer.on('mouseleave', function () {
+            trigger.removeClass('active');
+        });
     }
 };

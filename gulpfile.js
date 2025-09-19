@@ -104,7 +104,7 @@ const includedJsBuild = () => {
             /*"node_modules/readmore-js/readmore.js",*/
             "node_modules/swiper/swiper-bundle.js",
             "node_modules/tippy.js/dist/tippy-bundle.umd.js",
-            /*"node_modules/accordion-js/dist/accordion.min.js",*/
+            "node_modules/accordion-js/dist/accordion.min.js",
         ]
     )
         .pipe(dest(path.build.js))
@@ -128,7 +128,7 @@ const libsJsBuild = () => {
             /*"node_modules/readmore-js/readmore.js",*/
             "node_modules/swiper/swiper-bundle.js",
             "node_modules/tippy.js/dist/tippy-bundle.umd.js",
-            /*"node_modules/accordion-js/dist/accordion.min.js",*/
+            "node_modules/accordion-js/dist/accordion.min.js",
         ]
     )
         .pipe(concat("libs.min.js"))

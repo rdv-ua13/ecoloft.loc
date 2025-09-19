@@ -47,6 +47,10 @@
             padding: 15px 0;
         }
 
+        .dev {
+            color: #F93;
+            font-weight: 600;
+        }
         .ready {
             color: forestgreen;
             font-weight: 600;
@@ -59,21 +63,29 @@
         <div class="logo">
             <img src="img/logo.svg#logo" width="350" height="100" alt="Логотип компании">
         </div>
-		<?/*<span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">2 + ui</span>
+		<span style="display: inline-flex; align-items:center; font-size: 24px;">
+            <span style="color: forestgreen; font-weight: 600;">8 + ui</span>
             &nbsp;/&nbsp;
-            <span style="font-size: 24px;">n + ui (всего страниц в макете)</span>
-        </span>*/?>
+            <span style="font-size: 24px;">11 + ui (всего страниц в макете)</span>
+        </span>
     </div>
 
     <div>
         <ul>
 			<li><a class="ready" href="plug.php" target="_blank">Заглушка</a></li>
-			<li><a class="" href="index.php" target="_blank">Главная</a></li>
+			<li><a class="ready" href="index.php" target="_blank">Главная</a></li>
 
             <br>
-			<li><a class="" href="articles.php" target="_blank">Статьи</a></li>
-			<li><a class="" href="projects.php" target="_blank">Проекты</a></li>
+			<li><a class="ready" href="catalog.php" target="_blank">Каталог</a></li>
+
+            <br>
+			<li><a class="ready" href="articles.php" target="_blank">Статьи</a></li>
+			<li><a class="ready" href="articles-details.php" target="_blank">Статьи-деталка</a></li>
+			<li><a class="ready" href="projects.php" target="_blank">Проекты</a></li>
+			<li><a class="dev" href="projects-details.php" target="_blank">Проекты-деталка</a></li>
+
+            <br>
+            <li><a class="ready" href="privacy-policy.php" target="_blank">Политика конфиденциальности</a></li>
 
             <br>
             <?/*<li><a class="ready" href="ui.php" target="_blank">ui</a></li>*/?>

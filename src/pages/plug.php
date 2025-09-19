@@ -103,7 +103,7 @@
 
             </div>
         </div>
-        <div class="gap-xl">
+        <div class="gap-xl-plus">
             <div class="container">
                 <img
                     loading="lazy"
