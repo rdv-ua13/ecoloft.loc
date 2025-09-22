@@ -34,7 +34,7 @@ application.prototype.init = function () {
     /*this.initCatalogSidebarFilter();*/
     /*this.initCatalogSidebarApplyFilter();*/
     /*this.initCatalogContentSort();*/
-    /*this.initContactsMap();*/
+    this.initContactsMap();
 
     /*this.initAccordion();*/
     this.initModuleDescrAccordion();
@@ -1067,12 +1067,12 @@ application.prototype.initCatalogContentSort = function () {
 
 // Initialization contacts map
 application.prototype.initContactsMap = function () {
-    if ($('.contacts__map').length) {
+    if ($('.contacts-map').length) {
         ymaps.ready(init);
 
         let map,
             placemark,
-            mapItem = $('.contacts__map-content');
+            mapItem = $('.contacts-map-content');
 
         function init () {
             mapItem.each(function (i) {
@@ -1113,7 +1113,12 @@ application.prototype.initContactsMap = function () {
                     }
                 );
 
-                placemark = new ymaps.Placemark([coordX, coordY]);
+                placemark = new ymaps.Placemark([coordX, coordY], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/build/img/map-pin.svg',
+                    iconImageSize: [47, 59],
+                    iconImageOffset: [0, 0]
+                });
 
                 map.geoObjects.add(placemark);
                 map.controls.add(zoomControl);
