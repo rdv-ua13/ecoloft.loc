@@ -184,7 +184,7 @@
 				max-width: 393px;
 				transition: var(--transition);
 
-				&:not(.active) {
+				&:not(.is-active) {
 					opacity: 0;
 					pointer-events: none;
 					user-select: none;

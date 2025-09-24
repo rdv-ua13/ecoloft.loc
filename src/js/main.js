@@ -477,8 +477,8 @@ application.prototype.initBasicTabs = function () {
 
 // Initialization accordion
 application.prototype.initAccordion = function () {
-    if ($(".accordion-container").length) {
-        let accordion = new Accordion([".accordion-container"],{
+    if ($(".accordion-arr").length) {
+        let accordion = new Accordion([".accordion-arr"],{
             duration: 200,
             showMultiple: true,
         });
@@ -655,10 +655,10 @@ application.prototype.initModuleDescr = function () {
         pointer.on('mouseenter', function () {
             let data = $(this).data('module-item');
 
-            $('[data-module-target="' + data + '"]').addClass('active')
+            $('[data-module-target="' + data + '"]').addClass('is-active')
         });
         pointer.on('mouseleave', function () {
-            trigger.removeClass('active');
+            trigger.removeClass('is-active');
         });
     }
 };

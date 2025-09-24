@@ -237,7 +237,7 @@
         </div>
 
         <div class="about-pop-question-wrap">
-            <div class="about-pop-question accordion-container">
+            <div class="about-pop-question accordion-arr accordion-container">
                 <div class="ac about-pop-question__item">
                     <div class="ac-header">
                         <button class="btn-reset ac-trigger" type="button">
