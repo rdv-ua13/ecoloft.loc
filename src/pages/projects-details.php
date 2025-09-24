@@ -33,15 +33,96 @@
 
 	<div class="gap-xl">
 		<div class="container">
-            <div class="gap-lg cp-img">
-                <img
-                        loading="lazy"
-                        class="image"
-                        src="img/ecoloft_content_img_2.png"
-                        width="351"
-                        height="197"
-                        alt="Изображение блока"
-                >
+            <div class="gap-lg">
+                <div class="slider-out basic-slider-wrap">
+                    <div class="basic-slider basic-slider-details swiper" data-basic-slider-details>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img
+                                        loading="lazy"
+                                        class="image"
+                                        src="img/ecoloft_content_img_2.png"
+                                        width="351"
+                                        height="197"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        loading="lazy"
+                                        class="image"
+                                        src="img/ecoloft_content_img_1.png"
+                                        width="351"
+                                        height="197"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        loading="lazy"
+                                        class="image"
+                                        src="img/ecoloft_content_img_2.png"
+                                        width="351"
+                                        height="197"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        loading="lazy"
+                                        class="image"
+                                        src="img/ecoloft_content_img_1.png"
+                                        width="351"
+                                        height="197"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        loading="lazy"
+                                        class="image"
+                                        src="img/ecoloft_content_img_2.png"
+                                        width="351"
+                                        height="197"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        loading="lazy"
+                                        class="image"
+                                        src="img/ecoloft_content_img_1.png"
+                                        width="351"
+                                        height="197"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                        loading="lazy"
+                                        class="image"
+                                        src="img/ecoloft_content_img_2.png"
+                                        width="351"
+                                        height="197"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                        </div>
+                        <div class="swiper-navigation">
+                            <div class="swiper-button-next btn-reset btn btn-square">
+                                <svg class="icon icon-stroke">
+                                    <use href="img/sprite.svg#strk_chevron-right"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-prev btn-reset btn btn-square">
+                                <svg class="icon icon-stroke">
+                                    <use href="img/sprite.svg#strk_chevron-left"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
             <div class="">
                 <p>Этот проект — отличный пример того, как модульная технология позволяет быстро создать уютное пространство для отдыха. Заказчик хотел небольшую дачу для летних выходных с полноценной сауной и зоной релаксации.</p>
@@ -78,7 +159,7 @@
 						<div class="input-title">Номер телефона</div>
 						<div class="input-wrapper">
 							<input
-								class="input-reset input"
+								class="input-reset input isPhone"
 								type="text"
 								name=""
 								value=""

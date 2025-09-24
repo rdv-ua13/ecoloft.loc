@@ -64,9 +64,9 @@
             <img src="img/logo.svg#logo" width="350" height="100" alt="Логотип компании">
         </div>
 		<span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">9 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">11<?/* + ui*/?></span>
             &nbsp;/&nbsp;
-            <span style="font-size: 24px;">11 + ui (всего страниц в макете)</span>
+            <span style="font-size: 24px;">11<?/* + ui*/?> (всего страниц в макете)</span>
         </span>
     </div>
 
@@ -77,15 +77,19 @@
 
             <br>
 			<li><a class="ready" href="catalog.php" target="_blank">Каталог</a></li>
+			<li><a class="ready" href="card-details.php" target="_blank">Один товар</a></li>
+
+            <br>
+			<li><a class="ready" href="about.php" target="_blank">О компании</a></li>
 
             <br>
 			<li><a class="ready" href="articles.php" target="_blank">Статьи</a></li>
 			<li><a class="ready" href="articles-details.php" target="_blank">Статьи-деталка</a></li>
 			<li><a class="ready" href="projects.php" target="_blank">Проекты</a></li>
-			<li><a class="dev" href="projects-details.php" target="_blank">Проекты-деталка</a></li>
+			<li><a class="ready" href="projects-details.php" target="_blank">Проекты-деталка</a></li>
 
             <br>
-            <li><a class="dev" href="contacts.php" target="_blank">Контакты</a></li>
+            <li><a class="ready" href="contacts.php" target="_blank">Контакты</a></li>
 
             <br>
             <li><a class="ready" href="privacy-policy.php" target="_blank">Политика конфиденциальности</a></li>

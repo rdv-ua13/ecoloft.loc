@@ -93,8 +93,8 @@ const includedJsBuild = () => {
         [
             "node_modules/jquery/dist/jquery.js",
             /*"node_modules/jquery-validation/dist/jquery.validate.js",
-            "node_modules/jquery-validation/dist/localization/messages_ru.js",
-            "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",*/
+            "node_modules/jquery-validation/dist/localization/messages_ru.js",*/
+            "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
             "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
             /*"node_modules/flatpickr/dist/flatpickr.min.js",
             "node_modules/flatpickr/dist/l10n/ru.js",
@@ -117,8 +117,8 @@ const libsJsBuild = () => {
         [
             "node_modules/jquery/dist/jquery.js",
             /*"node_modules/jquery-validation/dist/jquery.validate.js",
-            "node_modules/jquery-validation/dist/localization/messages_ru.js",
-            "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",*/
+            "node_modules/jquery-validation/dist/localization/messages_ru.js",*/
+            "node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
             "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
             /*"node_modules/flatpickr/dist/flatpickr.min.js",
             "node_modules/flatpickr/dist/l10n/ru.js",

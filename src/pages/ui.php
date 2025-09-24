@@ -17,7 +17,7 @@
 
 	<?/* Подключение библиотек (отдельно)*/?>
     <script defer src="js/jquery.js"></script>                      <!-- jquery -->
-	<?/*<script defer src="js/jquery.maskedinput.js"></script>      <!-- maskedinput -->*/?>
+	<script defer src="js/jquery.maskedinput.js"></script>          <!-- maskedinput -->
 	<?/*<script defer src="js/jquery.validate.js"></script>         <!-- validate -->*/?>
 	<?/*<script defer src="js/messages_ru.js"></script>             <!-- validate -->*/?>
     <script defer src="js/popper.js"></script>                      <!-- popper -->

@@ -512,7 +512,7 @@
 						<div class="input-title">Номер телефона</div>
 						<div class="input-wrapper">
 							<input
-								class="input-reset input"
+								class="input-reset input isPhone"
 								type="text"
 								name=""
 								value=""
