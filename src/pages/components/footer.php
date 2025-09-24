@@ -70,32 +70,6 @@
         </div>
     </footer>
 
-	<?/*
-    <div class="preloader">
-        <div class="preloader__inner">
-            <div class="preloader__icon"></div>
-            <div class="preloader__text">
-                <span>Версия разрабатывается...</span>
-            </div>
-        </div>
-    </div>
-    <script>
-        function loading(isShow = true, text) {
-            let $loading = $('.preloader');
-
-            $loading.find('.preloader__text span').text(text);
-
-            if(isShow) {
-                $loading.fadeIn(600);
-                $('body').css('overflow', 'hidden');
-            }
-            else {
-                $loading.fadeOut(600);
-                $('body').css('overflow', '');
-            }
-        }
-    </script>*/?>
-
 	<?/*php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/modals.php"); ?>*/?>
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
