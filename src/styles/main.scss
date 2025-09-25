@@ -356,6 +356,11 @@
 @media (max-width: 991px) {
 	.index {
 		&-module-descr {
+			&__view {
+				&-caption {
+					display: none;
+				}
+			}
 			&__pointer {
 				&-list {
 					display: none;
