@@ -325,7 +325,7 @@
 		<div class="container">
 			<div class="basic-hca">
 				<div class="basic-hca__heading">
-					<div class="h2">Реальные впечатления владельцев</div>
+					<div class="h2">Подходящие аксессуары</div>
 				</div>
 				<div class="basic-hca__content">
 					<div class="slider-out basic-slider-wrap">
@@ -442,6 +442,128 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+<div class="gap-xl-plus">
+    <div class="container">
+        <div class="basic-hca">
+            <div class="basic-hca__heading">
+                <div class="h2">Похожие решения</div>
+            </div>
+            <div class="basic-hca__content">
+                <div class="slider-out basic-slider-wrap">
+                    <div class="basic-slider swiper" data-basic-slider>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <a class="card__view" href="javascript:;">
+                                        <img
+                                            loading="lazy"
+                                            class="image"
+                                            src="img/ecoloft_product_4.png"
+                                            width="299"
+                                            height="213"
+                                            alt="Изображение блока"
+                                        >
+                                    </a>
+                                    <div class="card__info">
+                                        <a class="card__title fz-subtitle-3" href="javascript:;">Настил</a>
+                                        <div class="card__descr fz-sm">
+                                            <div class="text-content">Готовая сауна площадью 9 м² с полками из термолипы и панорамным окном. Доступен выбор дровяной или электрической печи</div>
+                                        </div>
+                                        <div class="card__act">
+                                            <div class="card__price">245 000 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <a class="card__view" href="javascript:;">
+                                        <img
+                                            loading="lazy"
+                                            class="image"
+                                            src="img/ecoloft_product_4.png"
+                                            width="299"
+                                            height="213"
+                                            alt="Изображение блока"
+                                        >
+                                    </a>
+                                    <div class="card__info">
+                                        <a class="card__title fz-subtitle-3" href="javascript:;">Козырёк над входом</a>
+                                        <div class="card__descr fz-sm">
+                                            <div class="text-content">Функциональный и стильный козырёк защищает дверь от дождя и снега. Выполнен из закалённого стекла и анодированного алюминия</div>
+                                        </div>
+                                        <div class="card__act">
+                                            <div class="card__price">41 000 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <a class="card__view" href="javascript:;">
+                                        <img
+                                            loading="lazy"
+                                            class="image"
+                                            src="img/ecoloft_product_4.png"
+                                            width="299"
+                                            height="213"
+                                            alt="Изображение блока"
+                                        >
+                                    </a>
+                                    <div class="card__info">
+                                        <a class="card__title fz-subtitle-3" href="javascript:;">Уличное освещение</a>
+                                        <div class="card__descr fz-sm">
+                                            <div class="text-content">Комплект светильников с тёплым светом для крыльца и настила. Создаёт атмосферу уюта и безопасности в вечернее время</div>
+                                        </div>
+                                        <div class="card__act">
+                                            <div class="card__price">27 000 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product">
+                                    <a class="card__view" href="javascript:;">
+                                        <img
+                                            loading="lazy"
+                                            class="image"
+                                            src="img/ecoloft_product_4.png"
+                                            width="299"
+                                            height="213"
+                                            alt="Изображение блока"
+                                        >
+                                    </a>
+                                    <div class="card__info">
+                                        <a class="card__title fz-subtitle-3" href="javascript:;">Система слива с крыши</a>
+                                        <div class="card__descr fz-sm">
+                                            <div class="text-content">Металлические водостоки с порошковым покрытием отводят воду и защищают фасад модуля. Повышают долговечность конструкции и сохраняют внешний вид бан</div>
+                                        </div>
+                                        <div class="card__act">
+                                            <div class="card__price">38 000 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-navigation">
+                        <div class="swiper-button-next btn-reset btn btn-square">
+                            <svg class="icon icon-stroke">
+                                <use href="img/sprite.svg#strk_chevron-right"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-prev btn-reset btn btn-square">
+                            <svg class="icon icon-stroke">
+                                <use href="img/sprite.svg#strk_chevron-left"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="gap-xl-plus">

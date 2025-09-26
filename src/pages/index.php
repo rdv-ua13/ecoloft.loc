@@ -10,7 +10,7 @@
         </div>
         <div class="btn-g">
             <button class="btn-reset btn btn-secondary btn-w50--mobile" type="button">
-                <span class="text-content">Выбрать модуль</span>
+                <span class="text-content">Рассчитать стоимость</span>
             </button>
             <button class="btn-reset btn btn-primary btn-w50--mobile" type="button">
                 <svg class="icon icon-fill desktop-only">
@@ -71,7 +71,7 @@
         <div class="basic-hca basic-tabs">
             <div class="basic-hca__heading">
                 <div class="gap-sm-plus">
-                    <div class="h2">Каталог</div>
+                    <div class="h2">Популярные решения</div>
                 </div>
 
                 <div class="basic-tabs__header slider-out basic-slider-wrap">
@@ -196,54 +196,6 @@
                                 </a>
                                 <div class="card__info">
                                     <a class="card__title fz-subtitle-3" href="javascript:;">Комплект садовой мебели «Краун»</a>
-                                    <div class="card__descr fz-sm">
-                                        <div class="text-content">Готовая сауна площадью 9 м² с полками из термолипы и панорамным окном. Доступен выбор дровяной или электрической печи</div>
-                                    </div>
-                                    <div class="card__act">
-                                        <div class="card__price">от 800 000 ₽</div>
-                                        <a class="btn-reset btn btn-extra-2 card__more" href="javascript:;">
-                                            <span class="text-content">Подробнее</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card card-product">
-                                <a class="card__view" href="javascript:;">
-                                    <img
-                                            loading="lazy"
-                                            class="image"
-                                            src="img/ecoloft_product_2.png"
-                                            width="335"
-                                            height="227"
-                                            alt="Изображение блока"
-                                    >
-                                </a>
-                                <div class="card__info">
-                                    <a class="card__title fz-subtitle-3" href="javascript:;">Модуль Открытое патио</a>
-                                    <div class="card__descr fz-sm">
-                                        <div class="text-content">Готовая сауна площадью 9 м² с полками из термолипы и панорамным окном. Доступен выбор дровяной или электрической печи</div>
-                                    </div>
-                                    <div class="card__act">
-                                        <div class="card__price">от 800 000 ₽</div>
-                                        <a class="btn-reset btn btn-extra-2 card__more" href="javascript:;">
-                                            <span class="text-content">Подробнее</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card card-product">
-                                <a class="card__view" href="javascript:;">
-                                    <img
-                                            loading="lazy"
-                                            class="image"
-                                            src="img/ecoloft_product_3.png"
-                                            width="335"
-                                            height="227"
-                                            alt="Изображение блока"
-                                    >
-                                </a>
-                                <div class="card__info">
-                                    <a class="card__title fz-subtitle-3" href="javascript:;">Модуль Раздевалка</a>
                                     <div class="card__descr fz-sm">
                                         <div class="text-content">Готовая сауна площадью 9 м² с полками из термолипы и панорамным окном. Доступен выбор дровяной или электрической печи</div>
                                     </div>
