@@ -1983,6 +1983,7 @@ input.disabled {
 	}
 
 	&-banner {
+		order: -1;
 		padding: 20px;
 		border: unset;
 		background-color: var(--grey-900);
@@ -2018,7 +2019,9 @@ input.disabled {
 			}
 		}
 		.card__act {
+			flex: 1;
 			flex-direction: column;
+			justify-content: flex-end;
 			align-items: flex-start;
 			gap: unset;
 
@@ -2429,8 +2432,8 @@ input.disabled {
 
 
 	&-list {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(351px, 1fr));
 		gap: 12px;
 	}
 }
@@ -2438,13 +2441,13 @@ input.disabled {
 	.card {
 		border-radius: 36px;
 
-		&-product,
+		/*&-product,
 		&-project,
 		&-event,
 		&-review,
 		&-img {
 			max-width: 438px;
-		}
+		}*/
 
 		&-product {
 			.card__view {
@@ -2569,21 +2572,26 @@ input.disabled {
 
 
 		&-list {
+			/*grid-template-columns: repeat(auto-fit, minmax(1fr, 438px));*/
+
 			.card-product {
-				min-width: calc((100% - 24px) / 3);
-				width: calc((100% - 24px) / 3);
+				/*min-width: calc((100% - 24px) / 3);
+				width: calc((100% - 24px) / 3);*/
 			}
 			.card-banner {
-				min-width: calc(((100% - 24px) / 3) * 2);
-				width: calc(((100% - 24px) / 3) * 2);
+				/*min-width: calc(((100% - 24px) / 3) * 2);
+				width: calc(((100% - 24px) / 3) * 2);*/
+				grid-column: 2 span;
 			}
 
 			&--duo {
-				.card-step,
+				grid-template-columns: 1fr 1fr;
+
+				/*.card-step,
 				.card-sale {
 					min-width: calc((100% - 12px) / 2);
 					width: calc((100% - 12px) / 2);
-				}
+				}*/
 			}
 		}
 	}
@@ -2704,11 +2712,11 @@ input.disabled {
 		}
 
 
-		&-list {
+		/*&-list {
 			.card-banner {
 				order: -1;
 			}
-		}
+		}*/
 	}
 
 	.basic-slider {
@@ -2722,7 +2730,7 @@ input.disabled {
 		}
 	}
 }
-@media (min-width: 768px) and (max-width: 991px) {
+/*@media (min-width: 768px) and (max-width: 991px) {
 	.card {
 		&-product,
 		&-banner,
@@ -2735,7 +2743,17 @@ input.disabled {
 			max-width: calc((100% - 12px) / 2);
 		}
 	}
-}
+}*/
+/*@media (min-width: 992px) and (max-width: 1199px) {
+	.card {
+		&-list {
+			.card-banner {
+				order: -1;
+				grid-column: 2 span;
+			}
+		}
+	}
+}*/
 
 .social {
 	display: flex;

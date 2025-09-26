@@ -62,6 +62,152 @@
 
 <div class="gap-xl">
     <div class="container">
+        <div class="basic-hca">
+            <div class="basic-hca__heading">
+                <div class="h2">Читайте также</div>
+            </div>
+            <div class="basic-hca__content">
+                <div class="slider-out basic-slider-wrap">
+                    <div class="basic-slider swiper" data-basic-slider>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card card-event">
+                                    <a class="card__view" href="javascript:;">
+                                        <img
+                                                loading="lazy"
+                                                class="image"
+                                                src="img/ecoloft_project_1.png"
+                                                width="299"
+                                                height="180"
+                                                alt="Изображение блока"
+                                        >
+                                    </a>
+                                    <div class="card__info">
+                                        <a class="card__title fz-subtitle-4 fw-semibold" href="javascript:;">Преимущества модульной бани перед капитальной постройкой</a>
+                                        <div class="card__descr fz-sm">Модульные бани устанавливаются за один день, не требуют длительного строительства и позволяют экономить бюджет. Узнайте, почему всё больше владельцев загородных участков выбирают именно этот формат.</div>
+                                        <div class="card__act">
+                                            <a class="btn-reset btn btn-shapless btn-shapless--orange card__more" href="javascript:;">
+                                                <span class="text-content">Читать полностью</span>
+                                            </a>
+                                            <div class="card__date fz-sm">
+                                                <svg class="icon icon-fill">
+                                                    <use href="img/sprite.svg#calendar"></use>
+                                                </svg>
+                                                <span class="text-content">04.07.2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-event">
+                                    <a class="card__view" href="javascript:;">
+                                        <img
+                                                loading="lazy"
+                                                class="image"
+                                                src="img/ecoloft_project_2.png"
+                                                width="299"
+                                                height="180"
+                                                alt="Изображение блока"
+                                        >
+                                    </a>
+                                    <div class="card__info">
+                                        <a class="card__title fz-subtitle-4 fw-semibold" href="javascript:;">Парная круглый год: модульная баня в любой сезон</a>
+                                        <div class="card__descr fz-sm">Зимой — для прогрева и расслабления, летом — для ароматного пара после купания в реке. Модульная баня подходит для использования в любое время года и быстро становится центром загородной жизни.</div>
+                                        <div class="card__act">
+                                            <a class="btn-reset btn btn-shapless btn-shapless--orange card__more" href="javascript:;">
+                                                <span class="text-content">Читать полностью</span>
+                                            </a>
+                                            <div class="card__date fz-sm">
+                                                <svg class="icon icon-fill">
+                                                    <use href="img/sprite.svg#calendar"></use>
+                                                </svg>
+                                                <span class="text-content">03.07.2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-event">
+                                    <a class="card__view" href="javascript:;">
+                                        <img
+                                                loading="lazy"
+                                                class="image"
+                                                src="img/ecoloft_project_3.png"
+                                                width="299"
+                                                height="180"
+                                                alt="Изображение блока"
+                                        >
+                                    </a>
+                                    <div class="card__info">
+                                        <a class="card__title fz-subtitle-4 fw-semibold" href="javascript:;">Как ухаживать за модульной баней, чтобы она прослужила десятилетия</a>
+                                        <div class="card__descr fz-sm">Даже при минимальном уходе модульная баня способна радовать вас долгие годы. Делимся простыми советами по уходу за деревом, вентиляцией и инженерными системами</div>
+                                        <div class="card__act">
+                                            <a class="btn-reset btn btn-shapless btn-shapless--orange card__more" href="javascript:;">
+                                                <span class="text-content">Читать полностью</span>
+                                            </a>
+                                            <div class="card__date fz-sm">
+                                                <svg class="icon icon-fill">
+                                                    <use href="img/sprite.svg#calendar"></use>
+                                                </svg>
+                                                <span class="text-content">02.07.2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-event">
+                                    <a class="card__view" href="javascript:;">
+                                        <img
+                                                loading="lazy"
+                                                class="image"
+                                                src="img/ecoloft_project_1.png"
+                                                width="299"
+                                                height="180"
+                                                alt="Изображение блока"
+                                        >
+                                    </a>
+                                    <div class="card__info">
+                                        <a class="card__title fz-subtitle-4 fw-semibold" href="javascript:;">Преимущества модульной бани перед капитальной постройкой</a>
+                                        <div class="card__descr fz-sm">Модульные бани устанавливаются за один день, не требуют длительного строительства и позволяют экономить бюджет. Узнайте, почему всё больше владельцев загородных участков выбирают именно этот формат.</div>
+                                        <div class="card__act">
+                                            <a class="btn-reset btn btn-shapless btn-shapless--orange card__more" href="javascript:;">
+                                                <span class="text-content">Читать полностью</span>
+                                            </a>
+                                            <div class="card__date fz-sm">
+                                                <svg class="icon icon-fill">
+                                                    <use href="img/sprite.svg#calendar"></use>
+                                                </svg>
+                                                <span class="text-content">01.07.2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-navigation">
+                        <div class="swiper-button-next btn-reset btn btn-square">
+                            <svg class="icon icon-stroke">
+                                <use href="img/sprite.svg#strk_chevron-right"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-prev btn-reset btn btn-square">
+                            <svg class="icon icon-stroke">
+                                <use href="img/sprite.svg#strk_chevron-left"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap-xl">
+    <div class="container">
         <div class="send-request">
             <form action="" method="" class="send-request__item send-request__form">
                 <div class="send-request__form-header">

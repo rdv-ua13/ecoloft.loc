@@ -94,6 +94,23 @@
                 <div class="basic-tabs-content__panel active" data-id="0">
                     <div class="basic-tabs-content__content">
                         <div class="card-list">
+                            <div class="card card-banner">
+                                <div class="card__view"></div>
+                                <div class="card__info">
+                                    <a class="card__title fz-subtitle-1" href="javascript:;">Парься уже сегодня — остальное потом!</a>
+                                    <div class="card__descr">Получите готовую парную за день, а дополнительные модули добавляйте тогда, когда будет удобно — без стройки и лишних затрат</div>
+                                    <div class="card__act">
+                                        <div class="card__price">
+                                            <div class="card__price-title">Стоимость парной:</div>
+                                            от 560 000 ₽
+                                        </div>
+                                        <div class="card__act-descr fz-sm">В стоимость включены: модуль «Парная», доставка и установка на участке заказчика</div>
+                                        <a class="btn-reset btn btn-primary card__more" href="javascript:;">
+                                            <span class="text-content">Заказать парную</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card card-product">
                                 <a class="card__view" href="javascript:;">
                                     <img
@@ -114,23 +131,6 @@
                                         <div class="card__price">от 800 000 ₽</div>
                                         <a class="btn-reset btn btn-extra-2 card__more" href="javascript:;">
                                             <span class="text-content">Подробнее</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card card-banner">
-                                <div class="card__view"></div>
-                                <div class="card__info">
-                                    <a class="card__title fz-subtitle-1" href="javascript:;">Парься уже сегодня — остальное потом!</a>
-                                    <div class="card__descr">Получите готовую парную за день, а дополнительные модули добавляйте тогда, когда будет удобно — без стройки и лишних затрат</div>
-                                    <div class="card__act">
-                                        <div class="card__price">
-                                            <div class="card__price-title">Стоимость парной:</div>
-                                            от 560 000 ₽
-                                        </div>
-                                        <div class="card__act-descr fz-sm">В стоимость включены: модуль «Парная», доставка и установка на участке заказчика</div>
-                                        <a class="btn-reset btn btn-primary card__more" href="javascript:;">
-                                            <span class="text-content">Заказать парную</span>
                                         </a>
                                     </div>
                                 </div>
