@@ -183,8 +183,8 @@ h6, .h6 {//?
 }
 @media (min-width: 992px) {
 	h1, .h1 {
-		font-size: 64px;
-		line-height: 70px;
+		font-size: 56px;
+		line-height: 62px;
 	}
 	h2, .h2 {
 		font-size: 48px;
@@ -2761,7 +2761,7 @@ input.disabled {
 	}
 }
 
-/*.modal {
+.modal {
 	position: relative;
 	display: none;
 	padding: 0;
@@ -2893,7 +2893,7 @@ input.disabled {
 			}
 		}
 	}
-}*/
+}
 
 
 #bx-panel {
